@@ -1,4 +1,4 @@
-package passwordcracker;
+code src/main/java/passwordcracker/PasswordCracker.javapackage passwordcracker;
 
 /**
  * PasswordCracker v1
