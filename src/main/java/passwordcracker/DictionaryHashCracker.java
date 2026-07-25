@@ -6,9 +6,15 @@ import java.io.IOException;
 
 public class DictionaryHashCracker implements HashCracker {
 
+    private final String dictionaryPath;
+
+    public DictionaryHashCracker(String dictionaryPath) {
+        this.dictionaryPath = dictionaryPath;
+    }
+
     @Override
     public String crack(String hash) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("dict.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(dictionaryPath))) {
             String word;
             while ((word = reader.readLine()) != null) {
                 word = word.trim();
