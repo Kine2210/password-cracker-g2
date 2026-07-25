@@ -1,8 +1,5 @@
 package passwordcracker;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 public class BruteForceHashCracker implements HashCracker {
 
     private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
@@ -23,8 +20,7 @@ public class BruteForceHashCracker implements HashCracker {
     private String essayerCombinaisons(char[] combinaison, int index, int longueur, String hashCible) {
         if (index == longueur) {
             String mot = new String(combinaison);
-            String hashCalcule = calculerMD5(mot);
-            if (hashCalcule != null && hashCalcule.equalsIgnoreCase(hashCible)) {
+            if (Md5Util.matches(mot, hashCible)) {
                 return mot;
             }
             return null;
@@ -38,19 +34,5 @@ public class BruteForceHashCracker implements HashCracker {
             }
         }
         return null;
-    }
-
-    private String calculerMD5(String texte) {
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            byte[] digest = md.digest(texte.getBytes());
-            StringBuilder sb = new StringBuilder();
-            for (byte b : digest) {
-                sb.append(String.format("%02x", b));
-            }
-            return sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            return null;
-        }
     }
 }
