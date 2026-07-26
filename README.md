@@ -3,6 +3,7 @@
 > Mini-Projet 1 — Mise en œuvre du patron Simple Factory  
 > Cours : Initiation aux patrons de conception et aux tests logiciels  
 > École Supérieure Polytechnique (ESP/UCAD) — L3 GLSI — 2025/2026
+> **Membres :**  GUEYE Mouhamadou, NDIAYE Dieynaba, GUEYE Ndéye, CAMARA Fatou Kiné, SOW Cheikh Djibril
 
 ---
 
