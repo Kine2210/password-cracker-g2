@@ -233,7 +233,7 @@ Attaque par dictionnaire — le mot de passe "test" est retrouvé en moins de 50
 
 **Force brute — mot trouvé ("test")**
 ![BRUTE trouvé](assets/brutetrouve.png)
-Attaque par force brute — même résultat mais nettement plus lente (~10 secondes).
+Attaque par force brute — même résultat mais nettement plus lente (~60 secondes).
 
 **Hash inconnu — mot non trouvé**
 ![Password not found](assets/passwordnotfound.png)
