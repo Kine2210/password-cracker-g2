@@ -73,17 +73,17 @@ Le programme principal connaît et dépend directement de chaque implémentation
 
 ```
 password-cracker-g2/
+├── dict.txt                        # Dictionnaire de mots
 ├── src/
 │   └── main/
 │       └── java/
 │           └── passwordcracker/
-│               ├── HashCracker.java            # Interface commune
-│               ├── HashCrackerFactory.java     # Fabrique simple
-│               ├── BruteForceHashCracker.java  # Stratégie force brute
-│               ├── DictionaryHashCracker.java  # Stratégie dictionnaire
-│               ├── Md5Util.java                # Utilitaire MD5 partagé
-│               ├── PasswordCracker.java        # Programme principal
-│               └── dict.txt                    # Dictionnaire de mots
+│               ├── HashCracker.java
+│               ├── HashCrackerFactory.java
+│               ├── BruteForceHashCracker.java
+│               ├── DictionaryHashCracker.java
+│               ├── Md5Util.java
+│               └── PasswordCracker.java
 └── README.md
 ```
 
@@ -218,8 +218,8 @@ java -cp out passwordcracker.PasswordCracker -m INVALID -h 098f6bcd4621d373cade4
 |---|---|---|
 | Vitesse | Rapide (~150ms) | Lente (~10 secondes) |
 | Couverture | Limitée aux mots du fichier | Exhaustive (tous les cas) |
-| Mot de passe "test" |  Trouvé |  Trouvé |
-| Mot de passe hors dictionnaire |  Non trouvé |  Trouvé (si ≤ 4 caractères) |
+| Mot de passe "test" | ✅ Trouvé | ✅ Trouvé |
+| Mot de passe hors dictionnaire | ❌ Non trouvé | ✅ Trouvé (si ≤ 4 caractères) |
 | Cas d'usage idéal | Mots de passe courants | Mots de passe courts inconnus |
 
 ### Sorties console
