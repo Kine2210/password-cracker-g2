@@ -90,15 +90,14 @@ password-cracker-g2/
 
 ### Responsabilités des classes
 
-|    Classe               | Type         | Rôle     |
-|---|---|---|-------------|
-|  `HashCracker`          | Interface    | Contrat commun à toutes les stratégies de cassage |
-|  `HashCrackerFactory`   | Classe       | Centralise la création des stratégies selon la méthode choisie |
-|  `BruteForceHashCracker`| Classe concrète | Cassage par génération exhaustive de combinaisons a–z |
-| `DictionaryHashCracker` | Classe concrète | Cassage par recherche dans un fichier dictionnaire |
-| `Md5Util`               | Utilitaire  | Calcul et comparaison de hashs MD5, partagé entre les stratégies |
-| `PasswordCracker`       | Main        | Point d'entrée, parse les arguments `-m` et `-h` |
-
+| Classe | Type | Rôle |
+|---|---|---|
+| HashCracker | Interface | Contrat commun à toutes les stratégies de cassage |
+| HashCrackerFactory | Classe | Centralise la création des stratégies selon la méthode choisie |
+| BruteForceHashCracker | Classe concrète | Cassage par génération exhaustive de combinaisons a–z |
+| DictionaryHashCracker | Classe concrète | Cassage par recherche dans un fichier dictionnaire |
+| Md5Util | Utilitaire | Calcul et comparaison de hashs MD5, partagé entre les stratégies |
+| PasswordCracker | Main | Point d'entrée, parse les arguments `-m` et `-h` |
 ---
 
 ## 4. Diagramme UML
