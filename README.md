@@ -241,7 +241,7 @@ java -cp out passwordcracker.PasswordCracker -m INVALID -h 098f6bcd4621d373cade4
 
 ### Vidéo de démonstration
 
-> *(À compléter — lien vers la vidéo)*
+[▶ Voir la démonstration](https://youtu.be/-XgFo8Z08yo)
 
 ---
 
