@@ -226,18 +226,22 @@ java -cp out passwordcracker.PasswordCracker -m INVALID -h 098f6bcd4621d373cade4
 
 **Dictionnaire — mot trouvé ("test")**
 ![DICO trouvé](assets/dicotrouve.png)
+Attaque par dictionnaire — le mot de passe "test" est retrouvé en moins de 500ms.
 
 **Dictionnaire — mot trouvé ("admin")**
 ![DICO admin](assets/dicoadmin.png)
 
 **Force brute — mot trouvé ("test")**
 ![BRUTE trouvé](assets/brutetrouve.png)
+Attaque par force brute — même résultat mais nettement plus lente (~10 secondes).
 
 **Hash inconnu — mot non trouvé**
 ![Password not found](assets/passwordnotfound.png)
+Hash inconnu — le programme parcourt toutes les combinaisons sans succès.
 
 **Méthode invalide — gestion d'erreur**
 ![Méthode invalide](assets/methodeinvalide.png)
+Gestion d'erreur — méthode inconnue, le programme affiche le message d'usage.
 
 ### Vidéo de démonstration
 
